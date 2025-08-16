@@ -1,0 +1,63 @@
+.body-shape {
+            transition: all 0.5s ease;
+        }
+        
+        .female-body {
+            background-color: #fbcfe8;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+        
+        .male-body {
+            background-color: #bfdbfe;
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+        }
+        
+        .pear-shape {
+            border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
+            width: 120px;
+            height: 200px;
+        }
+        
+        .apple-shape {
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            width: 150px;
+            height: 180px;
+        }
+        
+        .hourglass-shape {
+            border-radius: 40% 40% 50% 50% / 48% 48% 52% 52%;
+            width: 120px;
+            height: 200px;
+        }
+        
+        .rectangle-shape {
+            border-radius: 30% 30% 50% 50% / 30% 30% 70% 70%;
+            width: 120px;
+            height: 200px;
+        }
+        
+        .inverted-triangle {
+            border-radius: 50% 50% 40% 40% / 40% 40% 60% 60%;
+            width: 150px;
+            height: 180px;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        .result-box {
+            transition: all 0.5s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .result-box.open {
+            max-height: 500px;
+        }
